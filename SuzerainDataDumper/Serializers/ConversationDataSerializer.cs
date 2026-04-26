@@ -17,6 +17,8 @@ internal sealed class ConversationDataSerializer : Serializer<ConversationData>
                 new AssignedTokenPropertiesSerializer(Object.AssignedTokenProperties))
             .AddProperty(nameof(ConversationData.ConversationProperties),
                 new ConversationPropertiesSerializer(Object.ConversationProperties))
-            .AddProperty(nameof(ConversationData.NameInDatabase), Object.NameInDatabase);
+            .AddProperty(nameof(ConversationData.NameInDatabase), Object.NameInDatabase)
+            .AddProperty(nameof(ConversationData.StoryFragmentProperties),
+                new StoryFragmentPropertiesSerializer(Object.StoryFragmentProperties));
     }
 }

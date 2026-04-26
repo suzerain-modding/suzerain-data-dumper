@@ -483,6 +483,8 @@
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
 		<Compile Include="JsonObjectBuilder.cs" />
+		<Compile Include="Serializers\BillDataSerializer.cs" />
+		<Compile Include="Serializers\BillPropertiesSerializer.cs" />
 		<Compile Include="Serializers\StoryFragmentPropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationPropertiesSerializer.cs" />
 		<Compile Include="Serializers\AssignedTokenPropertiesSerializer.cs" />
