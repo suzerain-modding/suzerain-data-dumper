@@ -13,20 +13,22 @@ internal static class EntityDataDumper
 
         JsonObjectBuilder builder = new(nameof(EntityDataManager));
 
-        List<ConversationData> conversationsData = Utils.ListFromIl2CppList(
-            EntityDataManager.AllConversationsData);
-        JsonObjectBuilder conversationsArrayBuilder = JsonObjectBuilder.FromList(
-            conversationsData,
+        JsonObjectBuilder billsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
+            EntityDataManager.AllBillsData,
+            (obj) => new BillDataSerializer(obj));
+        _ = builder.AddProperty(nameof(EntityDataManager.AllBillsData), billsArrayBuilder);
+
+        JsonObjectBuilder conversationsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
+            EntityDataManager.AllConversationsData,
             (obj) => new ConversationDataSerializer(obj));
         _ = builder.AddProperty(nameof(EntityDataManager.AllConversationsData),
                 conversationsArrayBuilder);
 
-        List<BillData> billsData = Utils.ListFromIl2CppList(EntityDataManager.AllBillsData);
-        JsonObjectBuilder billsArrayBuilder = JsonObjectBuilder.FromList(
-            billsData,
-            (obj) => new BillDataSerializer(obj));
-        _ = builder.AddProperty(nameof(EntityDataManager.AllBillsData),
-                billsArrayBuilder);
+        JsonObjectBuilder decisionsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
+            EntityDataManager.AllDecisionsData,
+            (obj) => new DecisionDataSerializer(obj));
+        _ = builder.AddProperty(nameof(EntityDataManager.AllDecisionsData),
+                decisionsArrayBuilder);
 
         string outputPath = Path.Combine(
             MelonEnvironment.MelonLoaderLogsDirectory,

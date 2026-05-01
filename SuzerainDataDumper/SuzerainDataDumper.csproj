@@ -483,7 +483,10 @@
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
 		<Compile Include="JsonObjectBuilder.cs" />
+		<Compile Include="Serializers\DecisionDataSerializer.cs" />
 		<Compile Include="Serializers\BillDataSerializer.cs" />
+		<Compile Include="Serializers\DecisionPropertiesSerializer.cs" />
+		<Compile Include="Serializers\DecisionOptionSerializer.cs" />
 		<Compile Include="Serializers\BillPropertiesSerializer.cs" />
 		<Compile Include="Serializers\StoryFragmentPropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationPropertiesSerializer.cs" />
@@ -491,7 +494,6 @@
 		<Compile Include="Serializers\AppBundlePropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationDataSerializer.cs" />
 		<Compile Include="Serializers\Serializer.cs" />
-		<Compile Include="Utils.cs" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -13,6 +13,6 @@ internal sealed class AppBundlePropertiesSerializer : Serializer<AppBundleProper
         return new JsonObjectBuilder(nameof(AppBundleProperties))
             .AddProperty(nameof(AppBundleProperties.AppBundle), Object.AppBundle)
             .AddProperty(nameof(AppBundleProperties.StoryPacks),
-                JsonObjectBuilder.FromList(Utils.ListFromIl2CppList(Object.StoryPacks)));
+                JsonObjectBuilder.FromIl2CppList(Object.StoryPacks));
     }
 }

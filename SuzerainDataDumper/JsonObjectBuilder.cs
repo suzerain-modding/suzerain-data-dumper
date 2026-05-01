@@ -87,5 +87,29 @@ internal sealed class JsonObjectBuilder
         }
         return builder;
     }
+
+    public static JsonObjectBuilder FromIl2CppList<T>(
+        Il2CppSystem.Collections.Generic.List<T> list)
+    {
+        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        for (int i = 0; i < list.Count; i++)
+        {
+            _ = builder.AddProperty(i.ToString(CultureInfo.InvariantCulture), list[i]);
+        }
+        return builder;
+    }
+
+    public static JsonObjectBuilder FromIl2CppList<T>(
+        Il2CppSystem.Collections.Generic.List<T> list,
+        Func<T, Serializer<T>> serializerFactory)
+    {
+        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        for (int i = 0; i < list.Count; i++)
+        {
+            Serializer<T> serializer = serializerFactory(list[i]);
+            _ = builder.AddProperty(i.ToString(CultureInfo.InvariantCulture), serializer);
+        }
+        return builder;
+    }
 }
 
