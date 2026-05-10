@@ -18,6 +18,7 @@ internal sealed class DecisionDataSerializer : Serializer<DecisionData>
             .AddProperty(nameof(DecisionData.DecisionProperties),
                 new DecisionPropertiesSerializer(Object.DecisionProperties))
             .AddProperty(nameof(DecisionData.NameInDatabase), Object.NameInDatabase)
+            .AddProperty(nameof(DecisionData.Path), Object.Path)
             .AddProperty(nameof(DecisionData.StoryFragmentProperties),
                 new StoryFragmentPropertiesSerializer(Object.StoryFragmentProperties));
     }

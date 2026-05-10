@@ -18,6 +18,7 @@ internal sealed class BillDataSerializer : Serializer<BillData>
             .AddProperty(nameof(BillData.BillProperties),
                 new BillPropertiesSerializer(Object.BillProperties))
             .AddProperty(nameof(BillData.NameInDatabase), Object.NameInDatabase)
+            .AddProperty(nameof(BillData.Path), Object.Path)
             .AddProperty(nameof(BillData.StoryFragmentProperties),
                 new StoryFragmentPropertiesSerializer(Object.StoryFragmentProperties));
     }
