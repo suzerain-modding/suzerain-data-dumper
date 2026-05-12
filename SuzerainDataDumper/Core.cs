@@ -1,7 +1,7 @@
-﻿using MelonLoader;
+using MelonLoader;
 using UnityEngine.InputSystem;
 
-[assembly: MelonInfo(typeof(SuzerainDataDumper.Core), "Suzerain Data Dumper", "1.0.0", "Fluffyalien", null)]
+[assembly: MelonInfo(typeof(SuzerainDataDumper.Core), "Suzerain Data Dumper", "1.0.0", "Fluffyalien1422", null)]
 [assembly: MelonGame("Torpor Games", "Suzerain")]
 
 namespace SuzerainDataDumper;
