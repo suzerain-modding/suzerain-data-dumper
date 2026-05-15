@@ -12,6 +12,7 @@
 		<AssemblyName>SuzerainDataDumper</AssemblyName>
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Platforms>x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -483,6 +484,8 @@
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
 		<Compile Include="JsonObjectBuilder.cs" />
+		<Compile Include="Serializers\NewsDataSerializer.cs" />
+		<Compile Include="Serializers\NewsPropertiesSerializer.cs" />
 		<Compile Include="Serializers\DecisionDataSerializer.cs" />
 		<Compile Include="Serializers\BillDataSerializer.cs" />
 		<Compile Include="Serializers\DecisionPropertiesSerializer.cs" />

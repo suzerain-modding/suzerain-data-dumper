@@ -30,6 +30,11 @@ internal static class EntityDataDumper
         _ = builder.AddProperty(nameof(EntityDataManager.AllDecisionsData),
                 decisionsArrayBuilder);
 
+        JsonObjectBuilder newsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
+            EntityDataManager.NewsData,
+            (obj) => new NewsDataSerializer(obj));
+        _ = builder.AddProperty(nameof(EntityDataManager.NewsData), newsArrayBuilder);
+
         string outputPath = Path.Combine(
             MelonEnvironment.MelonLoaderLogsDirectory,
             "SuzerainDataDumper_EntityDataManager.json");
