@@ -9,9 +9,9 @@ internal static class EntityDataDumper
 {
     public static void Dump()
     {
-        Melon<Core>.Logger.Msg("Dumping EntityDataManager...");
+        Melon<Core>.Logger.Msg("Dumping entity data...");
 
-        JsonObjectBuilder builder = new(nameof(EntityDataManager));
+        JsonObjectBuilder builder = new("<entity data>");
 
         JsonObjectBuilder billsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
             EntityDataManager.AllBillsData,
@@ -37,9 +37,9 @@ internal static class EntityDataDumper
 
         string outputPath = Path.Combine(
             MelonEnvironment.MelonLoaderLogsDirectory,
-            "SuzerainDataDumper_EntityDataManager.json");
+            "SuzerainDataDumper.entity_data.json");
 
         File.WriteAllText(outputPath, builder.ToString());
-        Melon<Core>.Logger.Msg($"EntityDataManager dumped to '{outputPath}'.");
+        Melon<Core>.Logger.Msg($"Entity data dumped to '{outputPath}'.");
     }
 }

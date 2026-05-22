@@ -481,9 +481,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="ConversationsDumper.cs" />
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
 		<Compile Include="JsonObjectBuilder.cs" />
+		<Compile Include="Serializers\ConversationSerializer.cs" />
+		<Compile Include="Serializers\DialogueEntrySerializer.cs" />
+		<Compile Include="Serializers\FieldSerializer.cs" />
+		<Compile Include="Serializers\LinkSerializer.cs" />
 		<Compile Include="Serializers\NewsDataSerializer.cs" />
 		<Compile Include="Serializers\NewsPropertiesSerializer.cs" />
 		<Compile Include="Serializers\DecisionDataSerializer.cs" />
@@ -497,6 +502,7 @@
 		<Compile Include="Serializers\AppBundlePropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationDataSerializer.cs" />
 		<Compile Include="Serializers\Serializer.cs" />
+		<Compile Include="Utils.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
