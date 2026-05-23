@@ -14,6 +14,7 @@ internal sealed class ConversationSerializer : Serializer<Conversation>
             .AddProperty(nameof(Conversation.dialogueEntries),
                 JsonObjectBuilder.FromIl2CppList(Object.dialogueEntries,
                     (obj) => new DialogueEntrySerializer(obj)))
+            .AddProperty(nameof(Conversation.id), Object.id)
             .AddProperty(nameof(Conversation.Title), Object.Title);
     }
 }

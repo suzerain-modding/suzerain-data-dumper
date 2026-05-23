@@ -49,6 +49,10 @@ internal sealed class Core : MelonMod
         {
             ConversationsDumper.DumpRiziaConversations();
         }
+        else
+        {
+            return;
+        }
         FirstKeybindPressed = false;
     }
 
