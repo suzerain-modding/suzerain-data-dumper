@@ -67,7 +67,7 @@ internal sealed class JsonObjectBuilder
 
     public static JsonObjectBuilder FromList<T>(IList<T> list)
     {
-        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        JsonObjectBuilder builder = new($"List<{typeof(T).Name}>");
         for (int i = 0; i < list.Count; i++)
         {
             _ = builder.AddProperty(i.ToString(CultureInfo.InvariantCulture), list[i]);
@@ -79,7 +79,7 @@ internal sealed class JsonObjectBuilder
         IList<T> list,
         Func<T, Serializer<T>> serializerFactory)
     {
-        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        JsonObjectBuilder builder = new($"List<{typeof(T).Name}>");
         for (int i = 0; i < list.Count; i++)
         {
             Serializer<T> serializer = serializerFactory(list[i]);
@@ -91,7 +91,7 @@ internal sealed class JsonObjectBuilder
     public static JsonObjectBuilder FromIl2CppList<T>(
         Il2CppSystem.Collections.Generic.List<T> list)
     {
-        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        JsonObjectBuilder builder = new($"List<{typeof(T).Name}>");
         for (int i = 0; i < list.Count; i++)
         {
             _ = builder.AddProperty(i.ToString(CultureInfo.InvariantCulture), list[i]);
@@ -103,7 +103,7 @@ internal sealed class JsonObjectBuilder
         Il2CppSystem.Collections.Generic.List<T> list,
         Func<T, Serializer<T>> serializerFactory)
     {
-        JsonObjectBuilder builder = new($"{typeof(T).Name}[]");
+        JsonObjectBuilder builder = new($"List<{typeof(T).Name}>");
         for (int i = 0; i < list.Count; i++)
         {
             Serializer<T> serializer = serializerFactory(list[i]);
