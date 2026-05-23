@@ -7,7 +7,7 @@ Suzerain Data Dumper is intended for modders to view technical details about exi
 ## Installation
 
 1. Follow Suzerain Modding Kit's Installing Mods guide (TODO: link SMK installing mods guide) to learn how to install mods.
-2. Download Suzerain Data Dumper from [releases](https://github.com/suzerain-modding/suzerain-data-viewer/releases) and add it to your `Mods` folder as explained in the Installing Mods guide.
+2. Download Suzerain Data Dumper from [releases](https://github.com/suzerain-modding/suzerain-data-dumper/releases) and add it to your `Mods` folder as explained in the Installing Mods guide.
 
 ## Usage
 
