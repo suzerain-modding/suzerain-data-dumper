@@ -21,3 +21,6 @@ Suzerain Data Dumper is intended for modders to view technical details about exi
 4. The file path of the generated JSON file will be printed to the MelonLoader console.
 5. Use [Suzerain Data Viewer](https://github.com/suzerain-modding/suzerain-data-viewer) to generate a static HTML site based on the data for easy inspection.
 
+## Disclaimer
+
+Suzerain Data Dumper is an unofficial, community-made tool for dumping Suzerain game data. It is part of the [Suzerain Modding](https://github.com/suzerain-modding) ecosystem and is not affiliated with, endorsed by, or sponsored by Torpor Games. Suzerain is a trademark of Torpor Games.
