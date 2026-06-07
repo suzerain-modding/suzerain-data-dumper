@@ -1,4 +1,4 @@
-using Il2Cpp;
+using ConditionalInstruction = Il2Cpp.ConditionalInstructionProperties.ConditionalInstruction;
 
 namespace SuzerainDataDumper.Serializers;
 

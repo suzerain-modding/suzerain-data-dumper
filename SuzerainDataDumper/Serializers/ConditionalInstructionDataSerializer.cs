@@ -14,7 +14,8 @@ internal sealed class ConditionalInstructionDataSerializer : Serializer<Conditio
             .AddProperty(nameof(ConditionalInstructionData.AppBundleProperties),
                 new AppBundlePropertiesSerializer(Object.AppBundleProperties))
             .AddProperty(nameof(ConditionalInstructionData.ConditionalInstructionProperties),
-                new ConditionalInstructionPropertiesSerializer(Object.ConditionalInstructionProperties))
+                new ConditionalInstructionPropertiesSerializer(
+                    Object.ConditionalInstructionProperties))
             .AddProperty(nameof(ConditionalInstructionData.NameInDatabase), Object.NameInDatabase)
             .AddProperty(nameof(ConditionalInstructionData.Path), Object.Path);
     }

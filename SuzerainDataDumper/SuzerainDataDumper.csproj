@@ -485,6 +485,9 @@
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
 		<Compile Include="JsonObjectBuilder.cs" />
+        <Compile Include="Serializers\ConditionalInstructionDataSerializer.cs" />
+        <Compile Include="Serializers\ConditionalInstructionPropertiesSerializer.cs" />
+        <Compile Include="Serializers\ConditionalInstructionSerializer.cs" />
 		<Compile Include="Serializers\ConversationSerializer.cs" />
 		<Compile Include="Serializers\DialogueEntrySerializer.cs" />
 		<Compile Include="Serializers\FieldSerializer.cs" />
