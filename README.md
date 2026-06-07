@@ -8,7 +8,7 @@ Suzerain Data Dumper is intended for modders to view technical details about exi
 
 Suzerain Data Dumper is built for Windows x64. It may run on Linux through Proton.
 
-1. Follow Suzerain Modding Kit's Installing Mods guide (TODO: link SMK installing mods guide) to learn how to install mods.
+1. Follow Suzerain Modding Kit's [Installing Mods](https://suzerain-modding.github.io/suzerain-modding-kit/guides/user/installing-mods.html) guide to learn how to install mods.
 2. Download Suzerain Data Dumper from [releases](https://github.com/suzerain-modding/suzerain-data-dumper/releases) and add it to your `Mods` folder as explained in the Installing Mods guide.
 
 ## Usage
