@@ -11,7 +11,6 @@ internal sealed class AppBundlePropertiesSerializer : Serializer<AppBundleProper
     protected override JsonObjectBuilder ToJsonObjectBuilder()
     {
         return new JsonObjectBuilder(nameof(AppBundleProperties))
-            .AddProperty(nameof(AppBundleProperties.AppBundle), Object.AppBundle)
             .AddProperty(nameof(AppBundleProperties.StoryPacks),
                 JsonObjectBuilder.FromIl2CppList(Object.StoryPacks));
     }
