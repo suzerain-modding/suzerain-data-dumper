@@ -36,6 +36,11 @@ internal static class EntityDataDumper
         _ = builder.AddProperty(nameof(EntityDataManager.conditionalInstructionData),
                 conditionalInstructionsArrayBuilder);
 
+        JsonObjectBuilder gameFlowDataArrayBuilder = JsonObjectBuilder.FromIl2CppList(
+            EntityDataManager.GameFlowData,
+            (obj) => new GameFlowDataSerializer(obj));
+        _ = builder.AddProperty(nameof(EntityDataManager.GameFlowData), gameFlowDataArrayBuilder);
+
         JsonObjectBuilder newsArrayBuilder = JsonObjectBuilder.FromIl2CppList(
             EntityDataManager.NewsData,
             (obj) => new NewsDataSerializer(obj));

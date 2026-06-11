@@ -488,6 +488,7 @@
 		<Compile Include="Serializers\ConversationSerializer.cs" />
 		<Compile Include="Serializers\DialogueEntrySerializer.cs" />
 		<Compile Include="Serializers\FieldSerializer.cs" />
+		<Compile Include="Serializers\GameFlowDataSerializer.cs" />
 		<Compile Include="Serializers\LinkSerializer.cs" />
 		<Compile Include="Serializers\NewsDataSerializer.cs" />
 		<Compile Include="Serializers\NewsPropertiesSerializer.cs" />
@@ -496,12 +497,14 @@
 		<Compile Include="Serializers\DecisionPropertiesSerializer.cs" />
 		<Compile Include="Serializers\DecisionOptionSerializer.cs" />
 		<Compile Include="Serializers\BillPropertiesSerializer.cs" />
+		<Compile Include="Serializers\StepEntrySerializer.cs" />
 		<Compile Include="Serializers\StoryFragmentPropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationPropertiesSerializer.cs" />
 		<Compile Include="Serializers\AssignedTokenPropertiesSerializer.cs" />
 		<Compile Include="Serializers\AppBundlePropertiesSerializer.cs" />
 		<Compile Include="Serializers\ConversationDataSerializer.cs" />
 		<Compile Include="Serializers\Serializer.cs" />
+		<Compile Include="Serializers\TurnEntrySerializer.cs" />
 		<Compile Include="Utils.cs" />
 	</ItemGroup>
 
