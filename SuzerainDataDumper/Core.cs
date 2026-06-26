@@ -49,6 +49,10 @@ internal sealed class Core : MelonMod
         {
             ConversationsDumper.DumpRiziaConversations();
         }
+        else if (kb.ctrlKey.isPressed && kb.aKey.wasPressedThisFrame)
+        {
+            ActorsDumper.DumpActorNames();
+        }
         else
         {
             return;
@@ -63,8 +67,7 @@ internal sealed class Core : MelonMod
             return;
         }
 
-        int overlayWidth = 200;
-        GUILayout.BeginArea(new Rect(10, 10, overlayWidth, overlayWidth));
+        GUILayout.BeginArea(new Rect(10, 10, 200, 400));
         GUILayout.BeginVertical(GUI.skin.box);
 
         GUILayout.Label("Suzerain Data Dumper");
@@ -73,6 +76,7 @@ internal sealed class Core : MelonMod
         GUILayout.Label("Ctrl+E to dump entity data.");
         GUILayout.Label("Ctrl+S to dump Sordland conversations.");
         GUILayout.Label("Ctrl+R to dump Rizia conversations.");
+        GUILayout.Label("Ctrl+A to dump actor names.");
 
         GUILayout.EndVertical();
         GUILayout.EndArea();

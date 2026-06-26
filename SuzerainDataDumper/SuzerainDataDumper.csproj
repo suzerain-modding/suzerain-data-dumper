@@ -478,6 +478,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="ActorsDumper.cs" />
 		<Compile Include="ConversationsDumper.cs" />
 		<Compile Include="Core.cs" />
 		<Compile Include="EntityDataDumper.cs" />
